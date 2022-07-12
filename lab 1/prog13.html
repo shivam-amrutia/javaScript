@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>array</title>
+</head>
+<body>
+    <script>
+        let arr = [];
+        let flag = true;
+        let i=0;
+        while(flag){
+            let temp = prompt("enter a country(enter 0 to stop)");
+            if(temp == 0){
+                flag = false;
+            }
+            else{
+                arr[i++] = temp; 
+            }
+        }
+        console.log(arr);
+        for(let j=0; j<arr.length; j++){
+            document.write(arr[j] + "<br/>")
+        }
+    </script>
+</body>
+</html>

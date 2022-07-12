@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>is prime?</title>
+</head>
+<body>
+    <script>
+        function isPrime(num){
+            let flag = true;
+            for(let i=3; i<num; i++){
+                if(num%i == 0){
+                    flag = false;
+                }
+            }
+            return flag;
+        }
+        let num = prompt("enter a number");
+        let flag = isPrime(num);
+        if(flag){
+                document.write(num + " is prime <br/>");
+        }
+        else{
+                document.write(num + " is not prime <br/>");
+        }
+        
+        let arr = [];
+        flag = true;
+        let i=0;
+        while(flag){
+            let temp = parseInt(prompt("enter a number(enter 0 to stop)"));
+            if(temp == 0){
+                flag = false;
+            }
+            else{
+                arr[i++] = temp; 
+            }
+        }
+        document.write("maximum value is " + Math.max(...arr));
+
+    </script>
+</body>
+</html>

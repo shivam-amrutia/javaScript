@@ -4,16 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorial</title>
+    <title>concat</title>
 </head>
 <body>
     <script>
-        let num = prompt("enter a number ");
-        let ans = 1;
-        for(let i=num; i>1; i--){
-            ans = ans * i;
-        }
-        document.write("factorial of " + num + " is " + ans);
+        let str1 = prompt("enter a string");
+        let str2 = prompt("enter a string to concat");
+        str1 = str1 + str2;
+        document.write(str1);
     </script>
 </body>
 </html>

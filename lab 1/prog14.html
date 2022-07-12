@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>prime</title>
+    <title>sort</title>
 </head>
 <body>
     <script>
-        let num = prompt("enter a number");
+        let arr = [];
         let flag = true;
-        for(let i=3; i<num; i++){
-            if(num%i == 0){
+        let i=0;
+        while(flag){
+            let temp = parseInt(prompt("enter a number(enter 0 to stop)"));
+            if(temp == 0){
                 flag = false;
             }
+            else{
+                arr[i++] = temp; 
+            }
         }
-        if(flag){
-            document.write(num + " is prime");
-        }
-        else{
-            document.write(num + " is not prime");
-        }
+        arr = arr.sort();
+        document.write(arr);
     </script>
 </body>
 </html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>find</title>
+</head>
+<body>
+    <script>
+        let flag = false;
+        let sentence = prompt("enter the sentence");
+        sentence = sentence.split(" ");
+        let find = prompt("enter the word to find");
+        for(let i=0; i<sentence.length; i++){
+            if(sentence[i] == find){
+                document.write(i);
+                flag = true;
+            }
+        }
+        flag?flag=false:document.write("word not found");
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>palindrome</title>
+</head>
+<body>
+    <script>
+        let str = prompt("enter a number or string!");
+        let first = 0;
+        let last = (str.length)-1;
+        let flag = true;
+        while(first != last && first < last){
+            if(str[first] != str[last]){
+                flag = false;
+                break;
+            }
+            first++;
+            last--;
+        }
+        if(flag){
+            document.write("string is palindrome");
+        }
+        else{
+            document.write("string is not palindrome");
+        }
+    </script>
+</body>
+</html>

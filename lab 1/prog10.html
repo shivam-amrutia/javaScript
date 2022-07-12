@@ -4,16 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Factorial</title>
+    <title>power</title>
 </head>
 <body>
     <script>
-        let num = prompt("enter a number ");
-        let ans = 1;
-        for(let i=num; i>1; i--){
-            ans = ans * i;
+        let num = prompt("enter a two digit number");
+        if(num.length != 2){
+            document.write("invalid number");
         }
-        document.write("factorial of " + num + " is " + ans);
+        else{
+            document.write(Math.pow(num[0],num[1]));
+        }
+
     </script>
 </body>
 </html>
